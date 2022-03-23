@@ -6,5 +6,5 @@ class AccountConfig(AppConfig):
     name = 'account'
 
     def ready(self):
-        from account.jobs import cron
-        cron.start()
+        from account.jobs import first_job
+        first_job.start()

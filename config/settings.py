@@ -81,7 +81,7 @@ DATABASES = {
 }
 
 CRONJOBS = [
-    ('*/1 * * * *', 'account.jobs.cron.my_scheduled_job')
+    ('*/1 * * * *', 'account.jobs.first_job.my_scheduled_job')
 ]
 
 # Password validation

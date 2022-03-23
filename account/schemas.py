@@ -55,7 +55,6 @@ class MessageOut(Schema):
     detail: str
 
 
-
 class CustomerOut(Schema):
     name: str
     age: int

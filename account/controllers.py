@@ -117,8 +117,8 @@ def upload(request, payload: BirthdayMassage, file: UploadedFile = File(...)):
         name = data.loc[i, 'name']
         email = data.loc[i, 'email']
         birthday = data.loc[i, 'birthday (M-D-Y)']
-        gender = data.loc[1, 'gender (male-female)']
-        phone_num = data.loc[1, 'phone_number']
+        gender = data.loc[i, 'gender (male-female)']
+        phone_num = data.loc[i, 'phone_number']
         if not ((name in customers_name) and (email in customers_email)):
             try:
                 Customer.objects.create(
